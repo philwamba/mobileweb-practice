@@ -1,0 +1,31 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+	outline: 0 !important;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.jumbotron, .box, footer {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
