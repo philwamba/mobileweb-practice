@@ -1,109 +1,146 @@
-/* ==========================================================================
-   Imported fonts
-   ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
-
-/* ==========================================================================
-   Genreral styles
-   ========================================================================== */
 * {
-	outline: 0 !important;
-}
-body {
-	font-family: 'Lato', sans-serif;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    outline: 0 !important;
 }
 
-/* ==========================================================================
-   UI styles
-   ========================================================================== */
-.form-control:focus {
-  border-color: #FBEA00;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(251, 234, 0, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(251, 234, 0, .6);
+body {
+    font-size: 20px;
+    color: #212529;
+    font-family: 'Lora', 'Times New Roman', serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.form-control:focus {
+    border-color: #FBEA00;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(251, 234, 0, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(251, 234, 0, .6);
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
 .btn-flash {
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);*/
+    font-weight: 700;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
 }
 
 .btn-flash:active,
 .btn-flash.active {
-	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
+
 .btn-flash {
-  background-image: -webkit-linear-gradient(top, #fbea00 0%, #c8bb00 100%);
-  background-image:      -o-linear-gradient(top, #fbea00 0%, #c8bb00 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbea00), to(#c8bb00));
-  background-image:         linear-gradient(to bottom, #fbea00 0%, #c8bb00 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbea00', endColorstr='#ffc8bb00', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border: #fbea00;
-  color: #000000;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: -webkit-linear-gradient(top, #fbea00 0%, #c8bb00 100%);
+    background-image: -o-linear-gradient(top, #fbea00 0%, #c8bb00 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fbea00), to(#c8bb00));
+    background-image: linear-gradient(to bottom, #fbea00 0%, #c8bb00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbea00', endColorstr='#ffc8bb00', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border: #fbea00;
+    color: #000000;
 }
+
 .btn-flash:hover,
 .btn-flash:focus {
-  background-color: #c8bb00;
-  background-position: 0 -15px;
-}
-.btn-flash:active,
-.btn-flash.active {
-  background-color: #c8bb00;
-  border-color: #645d00;
-}
-.btn-flash:disabled,
-.btn-flash[disabled] {
-  background-color: #c8bb00;
-  background-image: none;
+    background-color: #c8bb00;
+    background-position: 0 -15px;
 }
 
-/* ==========================================================================
-   Navbar styles
-   ========================================================================== */
+.btn-flash:active,
+.btn-flash.active {
+    background-color: #c8bb00;
+    border-color: #645d00;
+}
+
+.btn-flash:disabled,
+.btn-flash[disabled] {
+    background-color: #c8bb00;
+    background-image: none;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    text-align: center;
+}
+
+
 .navbar-brand {
-	color: #ffffff !important;
-	font-weight: 700;
+    color: #ffffff !important;
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* ==========================================================================
    Header styles
    ========================================================================== */
+.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5
+}
+
+.masthead .page-heading,
+.masthead .post-heading,
+.masthead .site-heading {
+    padding: 100px 0 150px;
+    color: white
+}
+
+.masthead .page-heading h1 {
+    font-size: 50px !important;
+}
+
+.masthead .page-heading h1,
+.masthead .page-heading .subheading {
+    margin-bottom: 3em !important;
+}
+
 .jumbotron {
-	background-image: url('../img/flash_bg.gif');
-	background-color: #8D1A0F;
-	text-align: center;
-	color: #ffffff;
+    background-image: url('../img/flash_bg.gif');
+    background-color: #8D1A0F;
+    text-align: center;
+    color: #ffffff;
 }
 
 .jumbotron .intro {
-	padding-left: 50px;
-	padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .box {
-	text-align: center;
+    text-align: center;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
